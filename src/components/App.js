@@ -10,6 +10,11 @@ function App() {
     3: { id: 3, title: "Inception" },
   });
 
+  setMovies({
+    ...movies,
+    [id]: { id: id, title: title },
+  });
+
   return (
     <div>
       <NavBar />
